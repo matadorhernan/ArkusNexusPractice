@@ -1,0 +1,35 @@
+header {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(transparent, #00838F), url(/assets/Background/Morning.jpg) bottom/cover no-repeat;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+img {
+    border: 6px solid #b2ebf2;
+    border-radius: 50%;
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+.spacer {
+    height: 80px;
+    background: #b2ebf2;
+    margin-bottom: 50px;
+}
+

@@ -1,0 +1,21 @@
+.nav-extended .nav-wrapper .brand-logo {
+    margin-left: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-extended .nav-wrapper ul {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.tabs {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
