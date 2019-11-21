@@ -9,6 +9,7 @@ import { ListComponent } from './contact/list/list.component';
 import { DetailComponent } from './contact/detail/detail.component';
 import { AddComponent } from './modals/add/add.component';
 import { EditComponent } from './modals/edit/edit.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,8 @@ import { EditComponent } from './modals/edit/edit.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
   ],
   providers: [],

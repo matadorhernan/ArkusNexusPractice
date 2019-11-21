@@ -9,6 +9,26 @@ nav {
     margin: 5px;
 }
 
+@media screen and (max-width: 1280px) {
+    .card {
+        width: calc(100% / 3 - 10px);
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .card {
+        width: calc(100% / 2 - 10px);
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .card {
+        width: 100%;
+        margin: 5px;
+    }
+}
+
 .card-wrapper {
 
     display: flex;

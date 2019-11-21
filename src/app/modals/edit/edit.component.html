@@ -1,43 +1,45 @@
 <div class="modal b-modal modal-fixed-footer">
-    <div class="modal-content">
-      <div class="title">
-          <h4>Modificando Contacto</h4>
-          <p>Para modificar un contacto solo edita los datos y haz click en <strong>Guardar.</strong></p>
-      </div>
-      <div class="row">
-        <form class="col s12">
-          <div class="row">
-  
-            <div class="input-field col s6">
-              <input placeholder="Nombres" id="first_name" type="text" class="validate">
-              <label for="first_name">Nombres</label>
-            </div>
-  
-            <div class="input-field col s6">
-                <input placeholder="Apellidos" id="last_name" type="text" class="validate">
-                <label for="first_name">Apellidos</label>
-              </div>
-  
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input  placeholder="Email" id="email" type="email" class="validate">
-              <label for="email">Email</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input placeholder="Avatar URL" id="email" type="url" class="validate">
-              <label for="email">Avatar URL</label>
-            </div>
-          </div>
-         
-        </form>
-      </div>
-  
+  <div class="modal-content">
+    <div class="title">
+      <h4>Modificando Contacto</h4>
+      <p>Para modificar un contacto solo edita los datos y haz click en <strong>Guardar.</strong></p>
     </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">CANCELAR</a>
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">AGREGAR</a>
+    <div class="row">
+      <form class="col s12" [formGroup]="user">
+        
+        <div class="row">
+
+          <div class="input-field col s6">
+            <input placeholder="Nombres" formControlName="first_name" type="text" class="validate">
+            <label for="first_name">Nombres</label>
+          </div>
+          <div class="input-field col s6">
+            <input placeholder="Apellidos" formControlName="last_name" type="text" class="validate">
+            <label for="first_name">Apellidos</label>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="Email" formControlName="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="Avatar URL" formControlName="avatar" type="url" class="validate">
+            <label for="email">Avatar URL</label>
+          </div>
+        </div>
+
+      </form>
     </div>
+
   </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">CANCELAR</a>
+    <a (click)="saveChangesUser()" class="modal-close waves-effect waves-green btn-flat">GUARDAR</a>
+  </div>
+</div>
